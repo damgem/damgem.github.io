@@ -1,28 +1,21 @@
 
 import React from 'react';
-import {Navbar, NavItem, NavLink} from 'react-bootstrap';
-
-function Entry(props) {
-    return (
-        <NavItem>
-            <NavLink href={props.href}>
-                {props.children}
-            </NavLink>
-        </NavItem>
-    );
-}
+import {Navbar, Nav} from 'react-bootstrap';
 
 function Navigation() {
     return (
-        <div className="slanted-outer" style={{zIndex:10}}>
-            <Navbar className="navbar-expand">
-                <div class ="navbar-nav list-unstyled">
-                    <Entry href="#start">Start</Entry>
-                    <Entry href="#projects">Projects</Entry>
-                    <Entry href="#softskills">Soft Skills</Entry>
-                    <Entry href="#hardskills">Hard Skills</Entry>
-                    <Entry href="#contact">Contact</Entry>
-                </div>
+        <div className="slanted-outer" style={{zIndex:10, position: 'fixed', top: 0, left: 0}}>
+            <Navbar expand="sm">
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Nav.Link href="#start">Damian Gleumes</Nav.Link>
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav>
+                        <Nav.Link href="#projects">Projects</Nav.Link>
+                        <Nav.Link href="#softskills">Soft Skills</Nav.Link>
+                        <Nav.Link href="#hardskills">Hard Skills</Nav.Link>
+                        <Nav.Link href="#contact">Contact</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
             </Navbar>
         </div>
     )
