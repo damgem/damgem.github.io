@@ -2,14 +2,16 @@ import './App.css';
 import Navigation from './components/Navigation';
 import SectionStart from './components/SectionStart';
 import SectionProjects from './components/SectionProjects';
+import React from 'react';
+import {Container} from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-        <Navigation/>
+    <Container className="App">
+        <Navigation />
         <SectionStart/>
         <SectionProjects/>
-    </div>
+    </Container>
   );
 }
 

@@ -1,15 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import {Row, Col, Card} from 'react-bootstrap';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
 
 const tagColors = {
-    "HTML":'#82e0aa',
+    "HTML5":'#82e0aa',
     "JS":'#f4d03f',
-    "CSS":'#76d7c4',
+    "JSX":'#f4d03f',
+    "React":"#d8e39d",
+    "CSS3":'#76d7c4',
     "Bootstrap":'#7dcea0',
+    "C++11":'#5dade2',
     "C++":'#5dade2',
     "R":'#95a5a6',
-    "MongoDB" : 'purple',
-    "Python":'#f1948a',
+    "MongoDB" : '#abcdd4',
+    "Python3":'#f1948a',
     "Flask": '#edbb99',
     "Numpy": '#f5b7b1',
     "Pandas": '#f5b7b1',
@@ -20,30 +27,35 @@ const tagColors = {
 class Project extends React.Component {
 
     render() {
+        const children = React.Children.toArray(this.props.children);
+        const bodyChildren = children.filter(c => !c.props.__CARD_FOOTER)
+        const footerChildren = children.filter(c => c.props.__CARD_FOOTER)
+
         return (
-            <Col ls={3} md={4} sm={6}>
-                <Card>
-                    <Card.Body>
-                        {this.props.children}
-                    </Card.Body>
-                </Card>
-            </Col>
+            <Card style={{backgroundColor:'#fefbfb', marginTop: '15px', marginBottom: '15px'}}>
+                <Card.Body className="d-flex flex-column pb-2">
+                    {bodyChildren}
+                </Card.Body>
+                <Card.Footer className="py-3">
+                    {footerChildren}
+                </Card.Footer>
+            </Card>
         );
     }
 
 
     static Title(props) {
-        return <Card.Title>{props.children}</Card.Title>;
+        return <Card.Title className="main-font"><h3>{props.children}</h3></Card.Title>;
     }
 
     static Description(props) {
-        return <Card.Text>{props.children}</Card.Text>;
+        return <Card.Text className="secondary-font">{props.children}</Card.Text>;
     }
 
     static Company(props) {
         return (
-            <small className="d-block">
-                <i className="fas fa-map-marker-alt mr-1"></i>
+            <small className="d-flex align-items-center mt-auto font-weight-bold" style={{color:"grey", letterSpacing: '-1px'}}>
+                <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-1"/>
                 {props.children}
             </small>
         );
@@ -54,15 +66,23 @@ class Project extends React.Component {
         const tags = props.langs.map(lang => {
             const bgColor = lang in tagColors ? tagColors[lang] : 'grey'; 
             return (
-                <Col className="col-auto m-1 badge" style={{backgroundColor:bgColor}}>
+                <Col className="col-auto m-1 badge secondary-font" key={lang} style={{backgroundColor:bgColor}}>
                     {lang}
                 </Col>
             );
         });
 
         // Return row of tags
-        return <Row>{tags}</Row>;
+        return <Row className="m-n1">{tags}</Row>;
     }
 }
+
+Project.Company.propTypes = {children: PropTypes.node, __TYPE: PropTypes.string}
+Project.Company.defaultProps = {__CARD_FOOTER: false};
+
+Project.TagList.propTypes = {langs: PropTypes.arrayOf(PropTypes.string), __TYPE: PropTypes.string,};
+Project.TagList.defaultProps = {__CARD_FOOTER: true};
+
+
 
 export default Project;
