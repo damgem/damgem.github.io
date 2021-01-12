@@ -1,9 +1,12 @@
 import './App.css';
+
+import React from 'react';
+import {Container} from 'react-bootstrap';
+
 import Navigation from './components/Navigation';
 import SectionStart from './components/SectionStart';
 import SectionProjects from './components/SectionProjects';
-import React from 'react';
-import {Container} from 'react-bootstrap';
+import SectionSoftSkills from './components/SectionSoftSkills';
 
 function App() {
   return (
@@ -11,6 +14,7 @@ function App() {
         <Navigation />
         <SectionStart/>
         <SectionProjects/>
+        <SectionSoftSkills/>
     </Container>
   );
 }

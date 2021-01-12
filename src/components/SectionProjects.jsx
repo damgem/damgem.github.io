@@ -23,9 +23,9 @@ function SectionProjects() {
                 <Break on={['sm', 'xs']}/>
             
                 <Project>
-                    <Project.Title>Twitter Sentiment Analyse</Project.Title>
+                    <Project.Title>Tweetsentiment Analyse</Project.Title>
                     <Project.Description>
-                        Analyse des Zusammenhangs zwischen positiv und negativ geprägten Wortfeldern und dem historischem Markttrend.
+                        Analyse des Zusammenhangs zwischen positiv und negativ geprägten Wortfeldern auf Twitter und dem historischem Markttrend.
                         Interaktive Visualisierung im Browser.
                     </Project.Description>
                     <Project.Company>QUANVEST GmbH</Project.Company>
