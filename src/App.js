@@ -7,6 +7,7 @@ import Navigation from './components/Navigation';
 import SectionStart from './components/SectionStart';
 import SectionProjects from './components/SectionProjects';
 import SectionSoftSkills from './components/SectionSoftSkills';
+import SectionHardSkills from './components/SectionHardSkills';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <SectionStart/>
         <SectionProjects/>
         <SectionSoftSkills/>
+        <SectionHardSkills/>
     </Container>
   );
 }

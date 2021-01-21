@@ -7,8 +7,8 @@ import {CardDeck} from 'react-bootstrap';
 
 function SectionProjects() {
     return (
-        <Section id="projects" title="Projects">
-            <CardDeck>
+        <Section id="projects" heading="Projects">
+            <CardDeck style={{marginTop:'-15px', marginBottom:'-15px'}}>
 
                 <Project>
                     <Project.Title>Excel Web-Add-In</Project.Title>

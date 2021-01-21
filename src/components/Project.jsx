@@ -66,7 +66,7 @@ class Project extends React.Component {
         const tags = props.langs.map(lang => {
             const bgColor = lang in tagColors ? tagColors[lang] : 'grey'; 
             return (
-                <Col className="col-auto m-1 badge secondary-font" key={lang} style={{backgroundColor:bgColor}}>
+                <Col className="col-auto m-1 badge secondary-font" key={lang} style={{backgroundColor:bgColor, lineHeight:1.25}}>
                     {lang}
                 </Col>
             );

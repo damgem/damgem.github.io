@@ -8,7 +8,7 @@ class Section extends React.Component {
             <Row id={id} className="py-5 d-flex flex-column align-items-center">
                 <Col xs={12} className="mb-5 mt-4">
                     <h1 className="main-font text-center">
-                        {this.props.title}
+                        {this.props.heading}
                     </h1>
                 </Col>
                 <Col {...childProps} className="">

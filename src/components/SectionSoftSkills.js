@@ -3,37 +3,35 @@ import Section from './Section';
 
 import {Row, Col} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faPalette, faBookOpen, faBrain, faEye} from '@fortawesome/free-solid-svg-icons';
+import {faPalette, faBookOpen, faBrain, faComment, faCircle} from '@fortawesome/free-solid-svg-icons';
 
 function Icon(props) {
-    return <FontAwesomeIcon
-            className="square"
+    return <div className="fa-layers fa-fw fa-3x">
+        <FontAwesomeIcon
+            icon={faCircle}
+        />
+        <FontAwesomeIcon
             icon={props.icon}
-            fixedWidth
-            style={{color:props.color,
-                    borderRadius: '50%',
-                    backgroundColor: '#d9d9d9',
-                    fontSize:'3rem',
-                    width:'3rem',
-                    padding: '0.66rem'}}
-    />
+            style={{color:props.color}}
+        />
+    </div>
 }
 
 function SoftSkill(props) {
     return (
-        <Col md={6} xm={12}>
-            <div className="mx-5 mb-5">
+        <Col md={6} xs={12}>
+            <div className="mx-lg-5 mx-4 mb-lg-5 mb-4">
             <Row>
                 {/*icon*/}
-                <Col xs="auto" className="">
+                <Col xs="auto ml-lg-3">
                     <Icon icon={props.icon} color={props.iconColor}/>
                 </Col>
                 {/*title*/}
-                <Col xs="auto" className="mr-auto d-flex align-items-center">
+                <Col xs="auto" className="px-0 pl-lg-2 text-center">
                     <h2 className="main-font">{props.title}</h2>
                 </Col>
                 {/*description*/}
-                <Col xs={12} className="mt-3 secondary-font" style={{fontSize:'1.05em'}}>
+                <Col xs={12} className="mt-lg-3 mt-1 secondary-font" style={{fontSize:'1.05em'}}>
                     {props.children}
                 </Col>
             </Row>
@@ -44,7 +42,7 @@ function SoftSkill(props) {
 
 function SectionSoftSkills() {
     return (
-        <Section id="softskills" title="Soft Skills" >
+        <Section id="softskills" heading="Soft Skills" >
             <Row className="mb-n5">
                 <SoftSkill title="Kreativ" icon={faPalette} iconColor="orange">
                     Ich zeichne, singe gerne und spiele Klarinette und Ukulele.
@@ -61,7 +59,7 @@ function SectionSoftSkills() {
                     das Projekt miteinfließen zu lassen, um das Endresultat so wertig wie möglich zu gestalten. 
                 </SoftSkill>
                 
-                <SoftSkill title="Kommunikativ" icon={faEye} iconColor="royalblue">
+                <SoftSkill title="Kommunikativ" icon={faComment} iconColor="royalblue">
                     Funktionalität ohne ansprechendes, kommunikatives Design ist nichts!
                     Ich besitze ein präzises Auge mit einem Gespür für Proportionen. 
                 </SoftSkill>
