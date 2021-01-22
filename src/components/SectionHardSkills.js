@@ -50,7 +50,7 @@ function SkillGroup(props) {
 function SectionHardSkills() {
     return (
         <Section id="hardskills" heading="Hardskills">
-            <CardColumns style={{columnGap: "2.75rem"}}>
+            <CardColumns style={{columnGap: "2.75rem", marginTop: "-15px", marginBottom: "-15px"}}>
                 <SkillGroup heading="Coding Languages">
                     <Skill confidence={5}>Python</Skill>
                     <Skill confidence={4}>C / C++</Skill>

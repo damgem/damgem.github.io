@@ -76,3 +76,14 @@ strong {
       column-count: 3 !important;
   }
 }
+
+button,
+button:active,
+button:focus, 
+button:hover,
+.btn,
+.btn:active, 
+.btn:focus, 
+.btn:hover{   
+    outline:none !important;
+}
