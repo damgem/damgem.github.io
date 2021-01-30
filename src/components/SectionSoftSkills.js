@@ -50,7 +50,7 @@ function SectionSoftSkills() {
                 </SoftSkill> 
 
                 <SoftSkill title="Autodidaktisch" icon={faBookOpen} iconColor="forestgreen">
-                    Mich zeichnet eine hohe Wissgebierigkeit aus und
+                    Mich zeichnet eine hohe Wissbegierigkeit aus und
                     die Fähigkeit mich schnell in Sachverhältnisse einarbeiten zu können. 
                 </SoftSkill>
                 
