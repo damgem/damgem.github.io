@@ -6,15 +6,11 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPalette, faBookOpen, faBrain, faComment, faCircle} from '@fortawesome/free-solid-svg-icons';
 
 function Icon(props) {
-    return <div className="fa-layers fa-fw fa-3x">
-        <FontAwesomeIcon
-            icon={faCircle}
-        />
-        <FontAwesomeIcon
+    return <FontAwesomeIcon
             icon={props.icon}
             style={{color:props.color}}
+            className="fa-fw fa-3x"
         />
-    </div>
 }
 
 function SoftSkill(props) {
@@ -23,7 +19,7 @@ function SoftSkill(props) {
             <div className="mx-lg-5 mx-4 mb-lg-5 mb-4">
             <Row>
                 {/*icon*/}
-                <Col xs="auto ml-lg-3">
+                <Col xs="auto ml-lg-3" className="pl-0">
                     <Icon icon={props.icon} color={props.iconColor}/>
                 </Col>
                 {/*title*/}
