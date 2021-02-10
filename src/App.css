@@ -77,6 +77,21 @@ strong {
   }
 }
 
+.nav-link {
+  background-color: #3F3C3C;
+  color: #F3F0F0 !important;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+  background-color: #F3F0F0;
+  color: darkred !important;
+  text-shadow: 3px 3px 4px #3F3C3C;
+}
+
+
+
 button,
 button:active,
 button:focus, 
@@ -86,4 +101,9 @@ button:hover,
 .btn:focus, 
 .btn:hover{   
     outline:none !important;
+}
+
+.btn:hover {
+  background-color: white !important;
+  color: darkred !important;
 }
