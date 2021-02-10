@@ -8,7 +8,7 @@ import {faEnvelopeOpen} from '@fortawesome/free-solid-svg-icons';
 
 function SectionContact(props) {
     return (
-        <Section heading="Contact" >
+        <Section id='contact' heading="Contact">
             <div className="d-flex flex-column align-items-center">
                 <p className="secondary-font text-center" style={{fontSize:"1.5em"}}>
                     Schreibe mir eine Mail!
