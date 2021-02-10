@@ -54,7 +54,7 @@ class Project extends React.Component {
 
     static Company(props) {
         return (
-            <small className="d-flex align-items-center mt-auto font-weight-bold" style={{color:"grey", letterSpacing: '-1px'}}>
+            <small className="d-flex align-items-center mt-auto font-weight-bold" style={{color:"#575757", letterSpacing: '-1px'}}>
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-1"/>
                 {props.children}
             </small>
