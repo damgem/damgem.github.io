@@ -3,7 +3,7 @@ import Section from './Section';
 
 import {Row, Col} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faPalette, faBookOpen, faBrain, faComment, faCircle} from '@fortawesome/free-solid-svg-icons';
+import {faPalette, faBookOpen, faBrain, faComment} from '@fortawesome/free-solid-svg-icons';
 
 function Icon(props) {
     return <FontAwesomeIcon
@@ -39,15 +39,15 @@ function SoftSkill(props) {
 function SectionSoftSkills() {
     return (
         <Section id="softskills" heading="Soft Skills" >
-            <Row className="mb-n5">
+            <Row className="mb-n5"> 
                 <SoftSkill title="Kreativ" icon={faPalette} iconColor="orange">
                     Ich zeichne, singe gerne und spiele Klarinette und Ukulele.
-                    Kniffelige Aufgaben begeistern mich und ich denke gerne über den Tellerrand hinaus. 
+                    Kniffelige Aufgaben begeistern mich und ich denke gerne über den Tellerrand hinaus.
                 </SoftSkill> 
 
                 <SoftSkill title="Autodidaktisch" icon={faBookOpen} iconColor="forestgreen">
                     Mich zeichnet eine hohe Wissbegierigkeit aus und
-                    die Fähigkeit mich schnell in Sachverhältnisse einarbeiten zu können. 
+                    die Fähigkeit mich schnell in Sachverhältnisse einarbeiten zu können.
                 </SoftSkill>
                 
                 <SoftSkill title="Mitdenkend" icon={faBrain} iconColor="darkred">
@@ -56,8 +56,8 @@ function SectionSoftSkills() {
                 </SoftSkill>
                 
                 <SoftSkill title="Kommunikativ" icon={faComment} iconColor="royalblue">
-                    Funktionalität ohne ansprechendes, kommunikatives Design ist nichts!
-                    Ich besitze ein präzises Auge mit einem Gespür für Proportionen. 
+                    Als Mathe-Nachhilfelehrer und Programmier-Workshop-Leiter, 
+                    bin ich geübt komplexe Gedanken und Ideen zu kommunizieren und vermitteln.
                 </SoftSkill>
             </Row>
         </Section>
