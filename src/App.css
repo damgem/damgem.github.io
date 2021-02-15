@@ -87,7 +87,7 @@ strong {
 .nav-link:hover {
   background-color: #F3F0F0;
   color: darkred !important;
-  text-shadow: 3px 3px 4px #3F3C3C;
+  text-shadow: -1.5px 3px 3.5px #3f3c3c90;
 }
 
 
