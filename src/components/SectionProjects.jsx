@@ -16,7 +16,7 @@ function SectionProjects() {
                         Eine Add-In, das eine Portfolio-Verwaltung direkt in Excel via runter- und hochladbarer Tabellen ermöglicht.
                         Umgesetzt als Website mit Flask Backend.
                     </Project.Description>
-                    <Project.Company>QUANVEST GmbH</Project.Company>
+                    <Project.Company href="http://www.quanvest.de">QUANVEST GmbH</Project.Company>
                     <Project.TagList langs={['Python3', 'Flask', 'Bootstrap', 'CSS3', 'HTML5', 'JS', 'RESTful API']}/>
                 </Project>
 
@@ -28,7 +28,7 @@ function SectionProjects() {
                         Analyse des Zusammenhangs zwischen positiv und negativ geprägten Wortfeldern auf Twitter und dem historischem Markttrend.
                         Interaktive Visualisierung im Browser.
                     </Project.Description>
-                    <Project.Company>QUANVEST GmbH</Project.Company>
+                    <Project.Company href="http://www.quanvest.de">QUANVEST GmbH</Project.Company>
                     <Project.TagList langs={['Python3', 'Bokeh', 'Matplotlib', 'Pandas', 'Bootstrap', 'CSS3', 'JS', 'MongoDB']}/>
                 </Project>
 
@@ -50,7 +50,7 @@ function SectionProjects() {
                         C++ Implementierung eines zeitkritischen Filters
                         für Datensätze in einem in R geschriebenen Backend.
                     </Project.Description>
-                    <Project.Company>QUANVEST GmbH</Project.Company>
+                    <Project.Company href="http://www.quanvest.de">QUANVEST GmbH</Project.Company>
                     <Project.TagList langs={['C++11', 'R', 'Rcpp']}/>
                 </Project>
                 
@@ -61,7 +61,7 @@ function SectionProjects() {
                     <Project.Description>
                         Leitung von Anfänger- und Fortgeschrittene-Programmierkurse für Jugendliche im Alter von 13 bis 16 Jahren.
                     </Project.Description>
-                    <Project.Company>SK-Jugend</Project.Company>
+                    <Project.Company href="http://www.sk-jugend.de">SK-Jugend</Project.Company>
                     <Project.TagList langs={['C++']}/>
                 </Project>
                 
@@ -72,7 +72,7 @@ function SectionProjects() {
                     <Project.Description>
                         Spielerische Heranführung von Jugendlichen zwischen 11 und 13 an das Programmieren via einer Python-Minecraft-Schnittstelle.
                     </Project.Description>
-                    <Project.Company>SK-Jugend</Project.Company>
+                    <Project.Company href="http://www.sk-jugend.de">SK-Jugend</Project.Company>
                     <Project.TagList langs={['Python3', 'RaspberryJuice']}/>
                 </Project>
                 

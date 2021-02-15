@@ -56,7 +56,7 @@ class Project extends React.Component {
         return (
             <small className="d-flex align-items-center mt-auto font-weight-bold" style={{color:"#575757", letterSpacing: '-1px'}}>
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-1"/>
-                {props.children}
+                <a href={props.href} target="_blank" rel="noopener noreferrer" style={{color:"#575757", letterSpacing: '-1px'}}>{props.children}</a>
             </small>
         );
     }
