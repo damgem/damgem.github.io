@@ -12,8 +12,9 @@ function SectionStart() {
             <Col lg={8} md={11} sm={10} xs={12} className="text-center secondary-font mx-auto mb-auto pb-5">
                 <p style={{fontSize:'1.75rem'}}>
                     Ich studiere Informatik an der Uni Bonn.<br/>
-                    Mich prägt eine große Leidenschaft fürs Coden und ich habe viel Spaß am gemeinsamen Gestalten<br/>
-                    von 'real-life'-Projekten.
+                    Mich prägt eine große Leidenschaft fürs Coden und ich habe
+                    viel Spaß am gemeinsamen Gestalten und Umsetzen von
+                    realitätsnahen Projekten.
                 </p>
             </Col>
         </Row>
