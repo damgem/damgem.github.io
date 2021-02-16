@@ -51,7 +51,7 @@ function SectionProjects() {
                         für Datensätze in einem in R geschriebenen Backend.
                     </Project.Description>
                     <Project.Company href="http://www.quanvest.de">QUANVEST GmbH</Project.Company>
-                    <Project.TagList langs={['C++11', 'R', 'Rcpp']}/>
+                    <Project.TagList langs={['C++', 'R', 'Rcpp']}/>
                 </Project>
                 
                 <Break on={['lg', 'md', 'sm', 'xs']}/>
@@ -59,9 +59,9 @@ function SectionProjects() {
                 <Project>
                     <Project.Title>C++ Workshops</Project.Title>
                     <Project.Description>
-                        Leitung von Anfänger- und Fortgeschrittene-Programmierkurse für Jugendliche im Alter von 13 bis 16 Jahren.
+                        Leitung von Anfänger- und Fortgeschrittene-Programmierkurse für Kinder im Alter von 13 bis 16 Jahren.
                     </Project.Description>
-                    <Project.Company href="http://www.sk-jugend.de">SK-Jugend</Project.Company>
+                    <Project.Company href="http://www.sk-jugend.de">SK-Stiftung, Sparkasse KölnBonn</Project.Company>
                     <Project.TagList langs={['C++']}/>
                 </Project>
                 
@@ -70,9 +70,9 @@ function SectionProjects() {
                 <Project>
                     <Project.Title>Python Workshop</Project.Title>
                     <Project.Description>
-                        Spielerische Heranführung von Jugendlichen zwischen 11 und 13 an das Programmieren via einer Python-Minecraft-Schnittstelle.
+                        Spielerische Heranführung von Kindern zwischen 11 und 13 an das Programmieren via einer Python-Minecraft-Schnittstelle.
                     </Project.Description>
-                    <Project.Company href="http://www.sk-jugend.de">SK-Jugend</Project.Company>
+                    <Project.Company href="http://www.sk-jugend.de">SK-Stiftung, Sparkasse KölnBonn</Project.Company>
                     <Project.TagList langs={['Python3', 'RaspberryJuice']}/>
                 </Project>
                 
