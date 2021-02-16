@@ -19,7 +19,7 @@ function SoftSkill(props) {
             <div className="mx-lg-5 mx-4 mb-lg-5 mb-4">
             <Row>
                 {/*icon*/}
-                <Col xs="auto ml-lg-3" className="pl-0">
+                <Col xs="auto ml-lg-3 ml-md-1 ml-3" className="pl-0">
                     <Icon icon={props.icon} color={props.iconColor}/>
                 </Col>
                 {/*title*/}
@@ -27,7 +27,7 @@ function SoftSkill(props) {
                     <h2 className="main-font">{props.title}</h2>
                 </Col>
                 {/*description*/}
-                <Col xs={12} className="mt-lg-3 mt-1 secondary-font" style={{fontSize:'1.05em'}}>
+                <Col xs={12} className="mt-lg-3 mt-2 mt-md-2 secondary-font" style={{fontSize:'1.05em'}}>
                     {props.children}
                 </Col>
             </Row>
