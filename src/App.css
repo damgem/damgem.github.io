@@ -50,6 +50,16 @@ strong {
 }
 
 
+/* xs */
+@media (max-width: 575px) {
+  .card {
+    display: block !important;
+  }
+  h1 {
+    font-size: 3.2rem !important;
+  }
+}
+
 /* sm */
 @media (min-width: 576px) {
   .card-columns {

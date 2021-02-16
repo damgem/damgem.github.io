@@ -24,12 +24,11 @@ function SectionLink(props) {
 
 function Navigation() {
     return (
-        <div className="slanted-outer" style={{zIndex:10, position: 'fixed', top: 0, left: 0}}>
+        <div className="slanted-outer" style={{zIndex:10, position: 'fixed', top: 0, left: 0, minWidth: '800px'}}>
             <Navbar expand="sm" className="p-0">
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <SectionLink href="#start" base>Damian Gleumes</SectionLink>
-
-                <Navbar.Collapse id="responsive-navbar-nav">
+                {/* Hide Navbar completly on mobile */}
+                <Navbar.Collapse>
+                    <SectionLink href="#start" base>Damian Gleumes</SectionLink>
                     <Nav>
                         <SectionLink href="#projects">Projects</SectionLink>
                         <SectionLink href="#softskills">Soft Skills</SectionLink>
