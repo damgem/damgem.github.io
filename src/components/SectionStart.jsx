@@ -6,14 +6,14 @@ function SectionStart() {
         <Row id="start" style={{height:"100vh"}} >
             <Col xs={12} className="text-center main-font mx-auto mt-auto mb-4">
                 <h1>
-                    Hi, my name is <strong>Damian Gleumes</strong>
+                    Hi, ich bin <strong>Damian Gleumes</strong>
                 </h1>
             </Col>
             <Col lg={8} md={11} sm={10} xs={12} className="text-center secondary-font mx-auto mb-auto pb-5">
                 <p style={{fontSize:'1.75rem'}}>
-                    I'm studying informatics @University Bonn <br/>
-                    I have a strong passion for coding and love applying
-                    my knowledge in real world projects! 
+                    Ich studiere Informatik an der Uni Bonn.<br/>
+                    Mich prägt eine große Leidenschaft fürs Coden und ich habe viel Spaß am gemeinsamen Gestalten<br/>
+                    von 'real-life'-Projekten.
                 </p>
             </Col>
         </Row>
